@@ -1,0 +1,27 @@
+
+    <div class="home">
+    
+        <div class="loc">
+            <div>
+                <label for="select">From</label>
+                <select id="airport-list" placeholder="select an airport">
+                    <option *ngFor="let airport of airports">{{airport.name}}</option>
+                </select>
+            </div>
+            <div>
+                <label for="select">To</label>
+                <select id="airport-list" placeholder="select an airport">
+                    <option *ngFor="let airport of airports">{{airport.name}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="detail">
+            <input class="date" type="date" placeholder="Date">
+            <select  id="clas">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="premium">Premium</option>
+            </select>
+            <button class="search">Search</button>
+        </div>
+    </div>
