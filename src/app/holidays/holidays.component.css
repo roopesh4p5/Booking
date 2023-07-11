@@ -1,0 +1,22 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100;
+    justify-content:center;
+
+}
+.crd{
+    width:250px;
+    height: 35vh;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.158),rgba(0, 0, 255, 0.151));
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+img{
+    object-fit: contain;
+}

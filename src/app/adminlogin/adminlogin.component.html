@@ -1,12 +1,15 @@
-<div class="container">
+<div class="page">
+  <div class="container">
     <h2>Admin Login</h2>
-    <form id="login-form" onsubmit="validateLogin($event)">
-      <label for="username">Username:</label>
-      <input type="text" id="username" required>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" required>
-
-      <input type="submit" value="Login">
+    <form (ngSubmit)="login()">
+      <div>
+        <input type="text" id="username" [(ngModel)]="username" name="first" required placeholder="username">
+      </div>
+      <div>
+        <input type="password" id="password" [(ngModel)]="password" name="first" required placeholder="password">
+      </div>
+      <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+      <button type="submit">Login</button>
     </form>
-  </div>
+  </div>  
+</div>

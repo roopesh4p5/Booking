@@ -1,7 +1,8 @@
 .home {
     width: 100%;
     height: 80vh;
-    background-image: radial-gradient(rgba(37, 14, 14, 0.315),rgba(16, 34, 16, 0.548));
+    background-image: url(./bb.jpg);
+    /* background-image: radial-gradient(rgba(37, 14, 14, 0.315),rgba(16, 34, 16, 0.548)); */
     display: flex;
     flex-direction: column;
     box-sizing: border-box;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-adminlogin',
@@ -6,29 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./adminlogin.component.css']
 })
 export class AdminloginComponent {
+  username: string = '';
+  password: string = '';
+  errorMessage: string = '';
 
+  constructor(private router: Router,private activatedroute :ActivatedRoute) {}
 
-ngOnInit(){
-
-  function validateLogin(){
-    // event.preventDefault(); // Prevent form submission
-
-    var username = document.getElementById("username")?.innerText
-    var password = document.getElementById("password")?.innerText;
-    console.log(username);
-    if (username === "Roopesh" && password === "Roopesh123") {
+  login() {
+    if (this.username === '' || this.password === '') {
+      this.errorMessage = '';
+      alert('Please fill in the inputs.');
+    } else if (this.username === 'Roopesh' && this.password === 'roovi123') {
       // Redirect to admin dashboard or perform desired action
-      alert("Login successful! Redirecting to admin dashboard...");
-      // window.location.href = "admin-dashboard.html";
+      alert('Login successful! Redirecting to admin dashboard...');
+      this.router.navigate(['Adminpage',{relativeTo:this.activatedroute}]);
     } else {
-      alert("Invalid username or password. Please try again.");
+      this.errorMessage = 'Invalid username or password. Please try again.'; 
     }
   }
-}
-
-
-
-
-
-
 }
