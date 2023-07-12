@@ -7,7 +7,7 @@
 }
 .crd{
     width:250px;
-    height: 35vh;
+    min-height: 40vh;
     background-image: linear-gradient(to left, rgba(255, 0, 0, 0.158),rgba(0, 0, 255, 0.151));
     border: 1px solid black;
     display: flex;
@@ -16,7 +16,12 @@
     align-items: center;
     margin: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 img{
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 10px;
+    width:220px ;
+    height: 150px;
+    padding: 10px 0;
 }

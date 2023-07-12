@@ -1,11 +1,14 @@
 .container {
     max-width: 900px;
     margin: 0 auto;
+    /* height: 80vh; */
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
     padding: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.158),rgba(0, 0, 255, 0.151));
+
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -30,4 +33,7 @@
     font-size: 14px;
     line-height: 1.5;
     color: #666;
+  }
+  .hgt{
+    height: 80vh;
   }

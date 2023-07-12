@@ -12,10 +12,8 @@ export class HolidaysComponent {
   constructor(private holiday: HolidaysService) {
     this.plans = this.holiday.holidayplans();
   }
-  value="";
   ngOnInit(){
     console.log(this.plans);
-    this.value=this.plans[10].image
   }
   
 }

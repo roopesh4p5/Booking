@@ -1,10 +1,11 @@
 <div class="flex">
     <div *ngFor="let plan of plans">
         <div class="crd">
-            <img width="220" height="150" [src]="plan.image" alt="">
+            <img   [src]="plan.image" alt="">
             <p>{{plan.from}} to {{plan.to}}</p>
             <p>{{plan.description}}</p>
             <p>{{plan.pricing|currency:"INR"}}</p>
+            <button class="btnn">book</button>
         </div>
     </div>
 </div>

@@ -2,12 +2,17 @@
   main {
     padding: 20px;
     text-align: center;
+    height: 80vh;
+
   }
   
   section {
     padding-top: 50px;
     max-width: 900px;
     margin: 0 auto;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.158),rgba(0, 0, 255, 0.151));
+    border-radius: 10px;
+    padding: 10px;
   }
   
   h1 {
@@ -20,6 +25,7 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
+    /* padding-bottom: 20px; */
   }
   
   

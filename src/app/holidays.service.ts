@@ -168,5 +168,11 @@ holidayplans(){
   }
 ]
 }
-  
+
+isadmin(){
+  console.log(this.isadmin)
+    return false
+  }
+    
 }
+
